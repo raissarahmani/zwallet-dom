@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="login.js" defer></script>
+    <title>Zwallet - Login</title>
+</head>
+<body class="container">
+    <div class="text">
+        <div class="line1">
+            <img src="wallet.png">
+            E-Wallet
+        </div>
+        <p class="line2">
+            Hello Welcome Back 👋
+        </p>
+        <p class="line3">
+            Fill out the form correctly or you can login with several option.
+        </p>
+        <div class="line4">
+            <button id="google">
+                <img src="google.png">
+                <p>Sign In With Google</p>
+            </button>
+            <button id="facebook">
+                <img src="facebook.png">
+                <p>Sign In With Facebook</p>
+            </button>
+        </div>
+        <div class="line5">
+            Or
+        </div>
+        <div class="line6">
+            <form action="register.html" method="post">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" class="email" placeholder="Enter Your Email"><br>     
+                <label for="pass">Password</label><br>
+                <div class="inputs-pass">
+                    <input type="password" name="pass" class="pass" placeholder="Enter Your Password"><br>
+                    <img src="EyeSlash.png">    
+                </div>
+                <p id="text" style="visibility:hidden">Login success</p>
+                <button type="button">Login</button>
+            </form>
+        </div>
+        <div class="line7">
+            Not Have An Account? 
+            <a href="register.html"> Register </a>
+        </div>
+    </div>
+    <div class="pic">
+        <img src="loginpic.png">
+    </div>
+</body>
+</html>

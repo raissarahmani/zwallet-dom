@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="transfer2.css">
+    <script src="transfer2.js" defer></script>
+    <title>Zwallet - Transfer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="wallet.png">
+            E-Wallet
+        </nav>
+        <div class="profile">
+            Ghaluh Wizard
+            <div class="pp">
+                <img src="profile.png">
+            </div>
+            <img src="down.png" id="dropdown">
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="option2">
+                <img src="dashboard.png">
+                Dashboard
+            </div>
+            <div class="option1">
+                <img src="Send2.png">
+                Transfer
+            </div>
+            <div class="option2">
+                <img src="history.png">
+                History
+            </div>
+            <div class="option2">
+                <img src="Upload.png">
+                Top Up
+            </div>
+            <div class="option2">
+                <img src="2 User.png">
+                Profile
+            </div>
+            <div class="option3">
+                <img src="Log Out.png">
+                Keluar
+            </div>
+        </aside>
+        <section class="transfer">
+            <div class="text1">
+                <img src="send3.png">
+                Transfer Money
+            </div>
+            <div class="text2">
+                <div class="text2-1">
+                    <div class="container2">1</div>
+                    <p class="line2">Find People</p>
+                </div>
+                <div class="text2-2">
+                    <div class="container1">2</div>
+                    <p class="line1">Set Nominal</p>
+                </div>
+                <div class="text2-3">
+                    <div class="container2">3</div>
+                    <p class="line2">Finish</p>
+                </div> 
+            </div>
+            <div class="container-transfer">
+                <div class="text3">
+                    <div class="text3-1">People Information</div>
+                    <div class="text3-2">
+                        <div class="container-imglog">
+                            <img src="ghaluh.png">
+                        </div>
+                        <div class="detail">
+                            <p id="name">Ghaluh 1</p>
+                            <p id="phone">(239) 555-0108</p>
+                            <div class="verified">
+                                <img src="verified.png">
+                                Verified
+                            </div>
+                        </div>
+                        <img src="Star2.png">
+                    </div>
+                </div>
+                <div class="text4">
+                    <div class="text3-1">Amount</div>
+                    <p>Type the amount you want to transfer and then press continue to the next steps</p>
+                    <div class="text4-1">
+                        <form action="transfer2.html" method="post">
+                            <input type="number" name="nominal" id="nominal" placeholder="Enter Nominal Transfer">
+                            <label for="nominal" hidden></label>
+                        </form>
+                    </div>
+                </div>
+                <div class="text4">
+                    <div class="text3-1">Notes</div>
+                    <p>You can add some notes for this transfer such as payment coffee or something</p>
+                    <div class="text4-2">
+                        <form action="transfer2.html" method="post">
+                            <textarea name="notes" id="notes" rows="8" placeholder="Enter Some Notes"></textarea>
+                            <label for="notes" hidden></label>
+                        </form>
+                    </div>
+                    <p id="text" style="visibility: hidden;">Fill data</p>
+                    <button type="button">Submit & Transfer</button>
+                </div>
+            </div>
+            <section class="shadow" style="visibility: hidden;"></section>
+            <section class="popup" style="visibility: hidden;">
+                <div class="popup1">TRANSFER TO GHALUH 1</div>
+                <div class="popup2">
+                    <div class="popup2-1">Enter Your Pin 👋</div>
+                    <div class="popup2-2">Enter Your Pin For Transaction</div>
+                    <div class="popup2-3">
+                        <form action="pin.html" method="post">
+                            <label for="digit1" hidden></label>
+                            <input type="number" name="digit1" class="pin" placeholder="1">
+                            <label for="digit2" hidden></label>
+                            <input type="number" name="digit2" class="pin">
+                            <label for="digit3" hidden></label>
+                            <input type="number" name="digit3" class="pin">
+                            <label for="digit4" hidden></label>
+                            <input type="number" name="digit4" class="pin">
+                            <label for="digit5" hidden></label>
+                            <input type="number" name="digit5" class="pin">
+                            <label for="digit6" hidden></label>
+                            <input type="number" name="digit6" class="pin">
+                        </form>
+                    </div>
+                    <p id="text2" style="visibility: hidden;">Enter pin</p>
+                    <button type="button">Next</button>
+                    <div class="popup2-4">
+                        Forgot Your Pin?
+                        <a href="forgotpass.html">Reset</a>
+                    </div>
+                </div>
+                <div class="popup-failed">
+                    <img src="failed.png">
+                    <div class="popup-failed1">Oops Transfer <span>Failed</span></div>
+                    <div class="popup-failed2">Sorry Theres is an issue for your transfer, try again later !</div>
+                    <button id="button1">Try Again</button>
+                    <button id="button2">Back To Dashboard</button>
+                </div>
+                <div class="popup-success">
+                    <img src="success.png">
+                    <div class="popup-success1">Yeay Transfer <span>Success</span></div>
+                    <div class="popup-success2">Thank you for using this application for your financial</div>
+                    <button id="button1">Done</button>
+                    <button id="button2">Transfer Again</button>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>

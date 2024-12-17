@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profilepin.css">
+    <script src="profilepin.js" defer></script>
+    <title>Zwallet - Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="wallet.png">
+            E-Wallet
+        </nav>
+        <div class="profile">
+            Ghaluh Wizard
+            <div class="pp">
+                <img src="profile.png">
+            </div>
+            <img src="down.png" id="dropdown">
+        </div>
+    </header>
+    <main>
+        <aside>
+            <div class="option2">
+                <img src="dashboard.png">
+                Dashboard
+            </div>
+            <div class="option2">
+                <img src="Send.png">
+                Transfer
+            </div>
+            <div class="option2">
+                <img src="history.png">
+                History
+            </div>
+            <div class="option2">
+                <img src="Upload.png">
+                Top Up
+            </div>
+            <div class="option1">
+                <img src="2 User.png">
+                Profile
+            </div>
+            <div class="option3">
+                <img src="Log Out.png">
+                Keluar
+            </div>
+        </aside>
+        <section class="profile2">
+            <div class="line1">
+                <img src="2 User2.png">
+                Profile
+            </div>
+            <div class="container-profile">
+                <div class="text1">
+                    <p class="line2">
+                        Change Pin 👋
+                    </p>
+                    <p class="line3">
+                        Please save your pin because this so important.
+                    </p>
+                    <div class="line4">
+                        <form action="pin.html" method="post">
+                            <label for="digit1" hidden></label>
+                            <input type="number" name="digit1" class="pin" placeholder="1">
+                            <label for="digit2" hidden></label>
+                            <input type="number" name="digit2" class="pin">
+                            <label for="digit3" hidden></label>
+                            <input type="number" name="digit3" class="pin">
+                            <label for="digit4" hidden></label>
+                            <input type="number" name="digit4" class="pin">
+                            <label for="digit5" hidden></label>
+                            <input type="number" name="digit5" class="pin">
+                            <label for="digit6" hidden></label>
+                            <input type="number" name="digit6" class="pin">
+                        </form>
+                    </div>
+                </div>
+                <p id="text" style="visibility: hidden;">Pin salah</p>
+                <button type="button">Submit</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

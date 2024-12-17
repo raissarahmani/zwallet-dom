@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="register.js" defer></script>
+    <title>Zwallet - Register</title>
+</head>
+<body class="container">
+    <div class="text">
+        <div class="line1">
+            <img src="wallet.png">
+            E-Wallet
+        </div>
+        <p class="line2">
+            Start Accessing Banking Needs With All Devices And All Platforms With 30.000+ Users
+        </p>
+        <p class="line3">
+            Transferring money is easier than ever. You can access Zwallet wherever you are. Desktop, laptop, mobile phone? We cover all of that for you!
+        </p>
+        <div class="line4">
+            <button id="google">
+                <img src="google.png">
+                <p>Sign In With Google</p>
+            </button>
+            <button id="facebook">
+                <img src="facebook.png"> 
+                <p>Sign In With Facebook</p>
+            </button>
+        </div>
+        <div class="line5"> 
+            Or
+        </div>
+        <div class="line6">
+            <form action="login.html" method="post" id="loginEmail">
+                <label for="email">Email</label><br>
+                <input type="text" name="email" class="email" placeholder="Enter Your Email"><br>     
+                <label for="pass">Password</label><br>
+                <div class="inputs-pass">
+                    <input type="password" name="pass" class="pass" placeholder="Enter Your Password"><br>
+                    <img src="EyeSlash.png">    
+                </div>
+                <label for="confirm">Confirm Password</label><br>
+                <div class="inputs-confirm">
+                    <input type="password" name="confirm" class="pass" placeholder="Enter Your Password Again"><br>
+                    <img src="EyeSlash.png">    
+                </div>
+                <p id="text" style="visibility:hidden">Register success</p>
+                <button type="button">Register</button>
+            </form>
+        </div>
+        <div class="line7">
+            Have An Account? 
+            <a href="login.html"> Login </a>
+        </div>
+    </div>
+    <div class="pic">
+        <img src="wallet2.png">
+    </div>
+</body>
+</html>
