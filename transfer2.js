@@ -1,3 +1,22 @@
+const goToProfile = document.querySelector("#profile")
+
+if (goToProfile) {
+    goToProfile.addEventListener("click", (event) => {
+        event.preventDefault()
+        window.location.href = 'profile.html'
+        return
+    }) 
+}
+
+const goToPrev = document.querySelector("#step-1")
+if (goToPrev) {
+    goToPrev.addEventListener("click", (event) => {
+        event.preventDefault()
+        window.location.href = 'transfer.html'
+        return
+    }) 
+}
+
 const amountTf = document.querySelector("#nominal")
 const descTf = document.querySelector("#notes")
 const textMessage = document.querySelector("#text")

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="login.js"></script>
+    <title>Input</title>
+</head>
+<body>
+    <div>
+        <p id="email-input"></p>
+        <p id="pass-input"></p>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search)
+        const email = urlParams.get('email')
+        const password = urlParams.get('password')
+
+        document.querySelector("#email-input").textContent = `Email: ${email}`
+        document.querySelector("#pass-input").textContent = `Password: ${password}`
+    </script>
+</body>
+</html>

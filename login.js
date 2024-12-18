@@ -33,6 +33,8 @@ btnLogin.addEventListener("click", (event) => {
         textMessage.style.visibility = "visible"
         textMessage.textContent = "Login success"
         textMessage.style.color = "green"
+        const redirectUrl = `login-input.html?email=${encodeURIComponent(formLogin.email)}&password=${encodeURIComponent(formLogin.pass)}`
+        window.location.href = redirectUrl
         return
     }
 
